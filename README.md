@@ -8,5 +8,7 @@
 
 4. Install LTLf2DFA: `pip install git+https://github.com/whitemech/LTLf2DFA.git@develop#egg=ltlf2dfa`
 
+5. Install MONA: `sudo apt install mona`
+
 
 
