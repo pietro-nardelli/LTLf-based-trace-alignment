@@ -5,10 +5,10 @@ digraph {
 	2 [shape=doublecircle]
 	3
 	fake -> 0 [style=bold]
-	3 -> 3 [label=True]
-	1 -> 1 [label="~B"]
+	0 -> 1 [label=True]
 	2 -> 3 [label=B]
 	1 -> 2 [label=B]
 	2 -> 2 [label="~B"]
-	0 -> 1 [label=True]
+	1 -> 1 [label="~B"]
+	3 -> 3 [label=True]
 }

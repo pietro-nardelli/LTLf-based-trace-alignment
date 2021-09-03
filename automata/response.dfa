@@ -4,9 +4,9 @@ digraph {
 	1 [shape=doublecircle]
 	2
 	fake -> 0 [style=bold]
-	1 -> 2 [label="K & ~L"]
-	2 -> 2 [label="~L"]
-	1 -> 1 [label="~K | (K & L)"]
-	2 -> 1 [label=L]
 	0 -> 1 [label=True]
+	2 -> 2 [label="~L"]
+	2 -> 1 [label=L]
+	1 -> 2 [label="K & ~L"]
+	1 -> 1 [label="~K | (K & L)"]
 }

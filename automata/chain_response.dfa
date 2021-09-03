@@ -6,10 +6,10 @@ digraph {
 	3
 	fake -> 0 [style=bold]
 	1 -> 1 [label="~N"]
-	3 -> 3 [label=True]
-	2 -> 2 [label="N & O"]
+	0 -> 1 [label=True]
 	2 -> 1 [label="O & ~N"]
 	2 -> 3 [label="(N & ~O) | (~N & ~O)"]
 	1 -> 2 [label=N]
-	0 -> 1 [label=True]
+	2 -> 2 [label="N & O"]
+	3 -> 3 [label=True]
 }
