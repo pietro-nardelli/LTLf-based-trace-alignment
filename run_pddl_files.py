@@ -17,17 +17,22 @@ for n_cons in n_constr:
         for lenght in len_traces:
             cost = 0.0
             time = 0.0
+            x = 0
             for i in range(n_traces):
                 name = n_cons+"_"+inv+"_"+lenght
                 path_domain = "$HOME/fastdownward/PDDL/"+syn_real+"/"+base_opt+"/"+"domain_"+base_opt+"_"+name+"_trace"+str(i+1)+".pddl"
                 path_problem = "$HOME/fastdownward/PDDL/"+syn_real+"/"+base_opt+"/"+"problem_"+base_opt+"_"+name+"_trace"+str(i+1)+".pddl"
 
                 output = os.popen("$HOME/fastdownward/fast-downward.py "+path_domain+" "+path_problem+" --search 'astar(blind())'").read()
-                cost += int(re.search("Plan cost: (.*)\n", output).group(1))
-                time += float(re.search("Search time: (.*)s\n", output).group(1))
-        
-            cost_tot.append(cost/n_traces)
-            time_tot.append(time/n_traces)
+                print (output)
+                if (re.search("Plan cost: (.*)\n", output) is not None and re.search("Search time: (.*)s\n", output) is not None):
+                    cost += int(re.search("Plan cost: (.*)\n", output).group(1))
+                    time += float(re.search("Search time: (.*)s\n", output).group(1))
+                    x+=1
+            
+            print (x)
+            cost_tot.append(cost/x)
+            time_tot.append(time/x)
         
         print (cost_tot)
         print (time_tot)
