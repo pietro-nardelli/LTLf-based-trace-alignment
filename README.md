@@ -3,7 +3,9 @@
 ## File description
 *main_base.ipynb*: notebook that contains all the code from the building of the constraint and trace automata to the generation of the PDDL files, without optimizations.
 
-*main_opt.ipynb*: notebook that contains all the code from the building of the constraint and trace automata to the generation of the PDDL files considering the optimizations.
+*main_try_opt.ipynb*: notebook that contains all the code from the building of the constraint and trace automata to the generation of the PDDL files, with attempt to optimize.
+
+*main_opt.ipynb*: notebook that contains all the code from the building of the constraint and trace automata to the generation of the PDDL files, with optimizations.
 
 *run_pddl_files.py*: file that contains the code to run the Fast Downward planner for each trace of each dataset and save the needed information.
 
