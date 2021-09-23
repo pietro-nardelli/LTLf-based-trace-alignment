@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 base_opt = "opt" # or "base"
 syn_real = "synthetic" # or "real-life"
-n_constr = ["10"]#, "15", "20"]
+n_constr = ["2"]#, "3", "5"]
 constr_inverted = ["3", "4", "6"]
 len_traces = ["1-50", "51-100"]#, "101-150", "151-200"]
 n_traces = 20
@@ -37,6 +37,7 @@ for n_cons in n_constr:
         print (cost_tot)
         print (time_tot)
     
+        '''
         # Plot cost
         plt.title("5 constraints ("+inv+" modified)")
         plt.xlabel("Length of the trace")
@@ -51,7 +52,8 @@ for n_cons in n_constr:
         plt.plot(len_traces, time_tot, "-o", color="red", label="Time plot "+n_cons+" "+inv)
         plt.savefig("results/"+syn_real+"/"+base_opt+"/time_plot_"+n_cons+"_"+inv+"_part1.png")
         plt.close()
+        '''
         # Save time and cost in .txt
-        file1 = open("results/"+syn_real+"/"+base_opt+"/"+n_cons+"_"+inv+"_part1.txt", "w")
+        file1 = open("results/"+syn_real+"/"+base_opt+"/"+n_cons+"_"+inv+".txt", "w")
         file1.write(str(cost_tot)+"\n"+str(time_tot))
         file1.close()
