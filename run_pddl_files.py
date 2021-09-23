@@ -4,7 +4,7 @@ import re
 import matplotlib.pyplot as plt
 
 base_opt = "opt" # or "base"
-syn_real = "synthetic" # or "real-life"
+syn_real = "synthetic" # or "created"
 n_constr = ["2"]#, "3", "5"]
 constr_inverted = ["3", "4", "6"]
 len_traces = ["1-50", "51-100"]#, "101-150", "151-200"]
