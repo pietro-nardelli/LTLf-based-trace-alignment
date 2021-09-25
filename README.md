@@ -1,5 +1,7 @@
 # LTLf-based-trace-alignment
 
+*WORK IN PROGRESS*
+
 ## File description
 *main_base.ipynb*: notebook that contains all the code from the building of the constraint and trace automata to the generation of the PDDL files, without optimizations.
 
