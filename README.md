@@ -84,7 +84,7 @@ Moreover, we created a dataset of 20 randomly generated traces of lenght 1-50 an
 - W. M. P. van der Aalst, M. Pesic, e H. Schonenberg, «Declarative workflows: Balancing between flexibility and support», Comput. Sci. - Res. Dev., vol. 23, n. 2, pagg. 99–113, mag. 2009.
 - Marrella, Andrea & De Giacomo, Giuseppe & Sardina, Sebastian & Maggi, Fabrizio. (2016). Computing Trace Alignment against Declarative Process Models through Planning.
 - Klarlund, N. and Møller, A. (2001). MONA Version 1.4 User Manual In Notes Series NS-01-1. BRICS, Department of Computer Science, University of Aarhus.
-- Francesco Fuggitti. (2019). LTLf2DFA (1.0.0.post0). Zenodo. https://doi.org/10.5281/zenodo.3888410
+- Francesco Fuggitti. (2019). LTLf2DFA (1.0.0.post0). Zenodo. https://doi.org/10.5281/zenodo.3888410.
 
 ## 5 - Authors
 Gianluca Maselli, Pietro Nardelli and Martina Valleriani.
